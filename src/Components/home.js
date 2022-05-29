@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react'
+import {motion} from 'framer-motion'
 
 function Home(props) {
   const [data, setData] = useState(props.edit ? props.edit.value: '');
@@ -18,11 +19,27 @@ function Home(props) {
 
     setData('');
   };
+  const todoVariant = {
+    hidden: {
+      x: '-100vw'
+    },
+    visible: {
+      x: 0,
+      transition: {
+        delay: 0.5, duration: 5, type: 'spring', stiffness: 200
+      }
+    }
+
+  }
+
   return (
 
     <section className='form-container'>
   
-      <form onSubmit={handleSubmit} className='form'>
+      <motion.form onSubmit={handleSubmit} className='form'
+        variants={todoVariant}
+        initial='hidden'
+        animate='visible'>
 
         {props.edit ? (
           <>
@@ -52,7 +69,7 @@ function Home(props) {
         <button className='todo-button' onClick={handleSubmit}>Add Todo</button>
        </>
         )}
-      </form>
+      </motion.form>
     </section>
   );
 }

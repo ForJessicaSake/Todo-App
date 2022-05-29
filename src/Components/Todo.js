@@ -14,12 +14,12 @@ function Todo() {
         setTodos(newTodos);
         console.log(todo, ...todos);
     }
-    const updateTodo =(todoId, newValue) => {
-        if(!newValue.text || /^\s*$/.test(newValue.text)){
+    const updateTodo = (todoId, newValue) => {
+        if (!newValue.text || /^\s*$/.test(newValue.text)) {
             return;
         }
 
-        setTodos(prev => prev.map(item =>(item.id === todoId ? newValue : item )))
+        setTodos(prev => prev.map(item => (item.id === todoId ? newValue : item)))
     }
 
     const removeTodo = (id) => {
