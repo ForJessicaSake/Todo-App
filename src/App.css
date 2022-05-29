@@ -23,7 +23,7 @@
    h1 {
        margin: 32px 0;
        color: #fff;
-       font-size: 30px;
+       font-size: 34px;
    }
    
    .complete {
@@ -203,7 +203,7 @@
            margin: 15% 5%;
        }
        .form input {
-           width: 500px;
+           width: 400px;
            margin-bottom: 6%;
            padding: 35px;
        }
