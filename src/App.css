@@ -101,15 +101,19 @@
        width: 90%;
    }
    
-   .todo-row:nth-child(4n + 1) {
+   .todo-row:nth-child(5n + 1) {
        background: linear-gradient( 90deg, rgba(93, 12, 255, 1) 0%, rgba(155, 0, 250, 1) 100%);
    }
    
-   .todo-row:nth-child(4n + 2) {
+   .todo-row:nth-child(5n + 2) {
+       background: linear-gradient( 90deg, rgb(243, 52, 52) 0%, rgb(236, 42, 58) 100%);
+   }
+   
+   .todo-row:nth-child(5n + 3) {
        background: linear-gradient( 90deg, rgba(255, 12, 241, 1) 0%, rgba(250, 0, 135, 1) 100%);
    }
    
-   .todo-row:nth-child(4n + 3) {
+   .todo-row:nth-child(5n + 4) {
        background: linear-gradient( 90deg, rgba(20, 159, 255, 1) 0%, rgba(17, 122, 255, 1) 100%);
    }
    
