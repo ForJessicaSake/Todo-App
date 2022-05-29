@@ -19,7 +19,9 @@ function Home(props) {
 
     setData('');
   };
-  const todoVariant = {
+
+
+  const heroVariant = {
     hidden: {
       x: '-100vw'
     },
@@ -32,14 +34,16 @@ function Home(props) {
 
   }
 
+
   return (
 
-    <section className='form-container'>
+    <motion.section className='form-container'
+      variants={heroVariant}
+      initial='hidden'
+      animate='visible'
+      >
   
-      <motion.form onSubmit={handleSubmit} className='form'
-        variants={todoVariant}
-        initial='hidden'
-        animate='visible'>
+      <form onSubmit={handleSubmit} className='form'>
 
         {props.edit ? (
           <>
@@ -69,8 +73,8 @@ function Home(props) {
         <button className='todo-button' onClick={handleSubmit}>Add Todo</button>
        </>
         )}
-      </motion.form>
-    </section>
+      </form>
+    </motion.section>
   );
 }
 
