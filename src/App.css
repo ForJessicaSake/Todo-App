@@ -12,7 +12,6 @@
    .todo-app {
        display: flex;
        flex-direction: column;
-       justify-content: start;
        min-height: 600px;
        background: #210c4b;
        text-align: center;
