@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { RiCloseCircleLine } from 'react-icons/ri';
+// import { RiCloseCircleLine } from 'react-icons/ri'
 import { TiEdit } from 'react-icons/ti';
 import Home from './home';
 import {motion} from 'framer-motion'
@@ -43,9 +43,9 @@ return todos.map((todo, index) => (
         >
             <p className='todo-text'> {todo.text}</p>
             <aside className='icons'>
-                <RiCloseCircleLine
+                {/* <RiCloseCircleLine
                     className='delete-icon'
-                    onClick={() => removeTodo(todo.id)} />
+                    onClick={() => removeTodo(todo.id)} /> */}
 
                 <TiEdit
                     className='edit-icon'
